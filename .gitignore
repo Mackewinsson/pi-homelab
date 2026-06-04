@@ -1,0 +1,29 @@
+# Environment (secrets)
+.env
+**/.env
+!**/.env.example
+
+# Audiobookshelf runtime data (back up separately — see docs/backup.md)
+stacks/audiobookshelf/config/*
+!stacks/audiobookshelf/config/.gitkeep
+stacks/audiobookshelf/metadata/*
+!stacks/audiobookshelf/metadata/.gitkeep
+stacks/audiobookshelf/audiobooks/*
+!stacks/audiobookshelf/audiobooks/.gitkeep
+stacks/audiobookshelf/podcasts/*
+!stacks/audiobookshelf/podcasts/.gitkeep
+
+# Scraper runtime
+apps/scraper/data/
+apps/scraper/logs/
+apps/scraper/.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+.Python
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
