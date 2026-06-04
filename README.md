@@ -58,5 +58,6 @@ cd ~/projects/pi-homelab/stacks/audiobookshelf && docker compose ps
 
 ## Docs
 
+- [AGENTS.md](AGENTS.md) — instructions for AI agents (SSH, deploy, safety)
 - [Restore a dead Pi](docs/restore-pi.md)
 - [What to back up outside Git](docs/backup.md)
