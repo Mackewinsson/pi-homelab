@@ -9,7 +9,8 @@ Infrastructure-as-code for my Raspberry Pi homelab: Docker stacks, env templates
 ```
 pi-homelab/
 ├── stacks/                 # Docker Compose services
-│   └── audiobookshelf/     # https://github.com/advplyr/audiobookshelf
+│   ├── audiobookshelf/     # https://github.com/advplyr/audiobookshelf
+│   └── cloudflared/        # Cloudflare Tunnel CLI (public HTTPS)
 ├── apps/                   # Non-Docker apps on the Pi
 │   └── scraper/
 └── docs/
@@ -42,6 +43,10 @@ cd stacks/audiobookshelf
 docker compose pull
 docker compose up -d
 ```
+
+## Cloudflare Tunnel (optional)
+
+Expose Audiobookshelf on a Cloudflare hostname without opening router ports. See [stacks/cloudflared/README.md](stacks/cloudflared/README.md).
 
 ## From your Mac
 

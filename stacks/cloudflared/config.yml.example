@@ -1,0 +1,13 @@
+# Generated on the Pi by install.sh after `cloudflared tunnel create`.
+# Live file: ~/.cloudflared/config.yml (or /etc/cloudflared/config.yml if using sudo service install)
+
+tunnel: pi-audiobookshelf
+credentials-file: /home/mackewinsson/.cloudflared/TUNNEL_UUID.json
+
+ingress:
+  - hostname: audiobooks.example.com
+    service: http://127.0.0.1:13378
+    originRequest:
+      # Audiobookshelf uses WebSockets; cloudflared proxies them when Origin is HTTP.
+      httpHostHeader: audiobooks.example.com
+  - service: http_status:404

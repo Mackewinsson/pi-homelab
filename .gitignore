@@ -2,6 +2,7 @@
 .env
 **/.env
 !**/.env.example
+stacks/cloudflared/.env
 
 # Audiobookshelf runtime data (back up separately — see docs/backup.md)
 stacks/audiobookshelf/config/*
